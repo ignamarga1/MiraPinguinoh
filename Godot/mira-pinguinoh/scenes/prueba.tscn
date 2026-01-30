@@ -9,6 +9,7 @@ distance = -78.0
 
 [node name="Player" parent="." unique_id=1894066236 instance=ExtResource("1_1eu8g")]
 position = Vector2(33, 18)
+motion_mode = 1
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=459742989]
 position = Vector2(32, -35)
