@@ -1,5 +1,12 @@
 extends Node2D
 
+const mask_fragments = {
+	0 : mask_fragment1_spritesheet,
+	1 : mask_fragment2_spritesheet,
+	2 : mask_fragment3_spritesheet,
+	3 : mask_fragment4_spritesheet,
+	4 : mask_fragment5_spritesheet,
+}
 const mask_fragment1_spritesheet = {
 	0 : preload("res://assets/mask_fragment_1/mask_0_1.png"),
 	1 : preload("res://assets/mask_fragment_1/mask_1_1.png"),

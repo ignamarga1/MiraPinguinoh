@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://iy36aspjpqsu" path="res://assets/mask_fragment_tileset_4.png" id="5_q5cp3"]
 [ext_resource type="Texture2D" uid="uid://04gehfd0pfr3" path="res://assets/mask_fragment_tileset_5.png" id="6_khdy1"]
 
-[node name="Mask" type="Node2D" unique_id=637967419 node_paths=PackedStringArray("current_mask_fragments_sprite")]
+[node name="Mask" type="Node2D" unique_id=637967419]
+visible = false
 script = ExtResource("1_rv8xw")
-current_mask_fragments_sprite = []
 
 [node name="CompositionFragments" type="Node2D" parent="." unique_id=1946109466]
 script = ExtResource("2_8u57e")
