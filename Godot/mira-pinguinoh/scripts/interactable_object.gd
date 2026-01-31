@@ -1,0 +1,27 @@
+extends Node2D
+
+@export var i = 0
+@export var j = 0
+@export var indicator: Sprite2D
+
+var player_inside_interaction_area = false
+
+func _ready() -> void:
+	SignalManager.light_interactable.connect(light_indicator)
+
+func _process(delta: float) -> void:
+	var interaction_pressed = Input.is_action_just_pressed("Interact")
+	if interaction_pressed && player_inside_interaction_area:
+		SignalManager.player_interaction.emit(i, j)
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body is Player:
+		player_inside_interaction_area = true
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if body is Player:
+		player_inside_interaction_area = false
+
+func light_indicator(x: int, y: int, color: Color):
+	if x == i && y == j:
+		indicator.modulate = color
