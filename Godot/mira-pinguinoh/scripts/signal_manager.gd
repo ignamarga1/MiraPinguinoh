@@ -2,3 +2,6 @@ extends Node
 
 signal player_interaction
 signal light_interactable
+signal panel_steped
+signal light_panel
+signal light_all_panels
