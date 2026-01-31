@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://y7g340yx1mg3"]
+
+[ext_resource type="Script" uid="uid://ckrfiji4ohs26" path="res://scenes/select_mask_fragment.gd" id="1_ymurh"]
+
+[node name="SelectMaskFragment" type="Node2D" unique_id=973922542]
+script = ExtResource("1_ymurh")
+
+[node name="Option1" type="Sprite2D" parent="." unique_id=616937323]
+position = Vector2(343, 518)
+
+[node name="Option2" type="Sprite2D" parent="." unique_id=792226385]
+position = Vector2(679, 518)
+
+[node name="Option3" type="Sprite2D" parent="." unique_id=1387813544]
+position = Vector2(983, 518)
