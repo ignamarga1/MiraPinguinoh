@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dc5gbt1e8usyy" path="res://scenes/player.tscn" id="2_8n31m"]
 [ext_resource type="Script" uid="uid://b7g0y687nerwo" path="res://scripts/tango_manager.gd" id="3_bthjg"]
 
-[node name="Queens" type="Node2D" unique_id=682151997]
+[node name="Tango" type="Node2D" unique_id=682151997]
 position = Vector2(307, 207)
 scale = Vector2(0.5, 0.5)
 
