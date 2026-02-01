@@ -8,11 +8,11 @@ extends Node2D
 
 var mask_fragments = [
 	[
-		preload("res://assets/everyone/ojos/ojos1.png"),
-		preload("res://assets/everyone/ojos/ojos2.png"),
-		preload("res://assets/everyone/ojos/ojos3.png"),
-		preload("res://assets/everyone/ojos/ojos4.png"),
-		preload("res://assets/everyone/ojos/ojos5.png")
+		preload("res://assets/mask/mask_fragment_0/mask_0_5.png"),
+		preload("res://assets/everyone/frentes/frente1.png"),
+		preload("res://assets/everyone/frentes/frente2.png"),
+		preload("res://assets/everyone/frentes/frente3.png"),
+		preload("res://assets/everyone/frentes/frente4.png")
 	],
 	[
 		preload("res://assets/everyone/ojos/ojos1.png"),
