@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ktjyw18fvjtx" path="res://scripts/game_over.gd" id="1_tbwuq"]
 [ext_resource type="Texture2D" uid="uid://clbdno6us1udy" path="res://assets/Untitled_Artwork.webp" id="2_racf3"]
 [ext_resource type="FontFile" uid="uid://cltfsflsy53sv" path="res://assets/Cardo/Cardo-Bold.ttf" id="3_7m3ot"]
+[ext_resource type="PackedScene" uid="uid://dgwjtaiyl386a" path="res://scenes/MaskModule.tscn" id="4_racf3"]
 
 [sub_resource type="Animation" id="Animation_bqqt6"]
 length = 0.001
@@ -67,6 +68,15 @@ offset_right = 1293.0
 offset_bottom = 739.0
 color = Color(0, 0, 0, 0.823)
 
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=596812071]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 1278.0
+offset_bottom = 720.0
+scale = Vector2(1, 0.9896432)
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1463330003]
 layout_mode = 0
 offset_right = 1278.0
@@ -75,7 +85,7 @@ offset_bottom = 716.0
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1995651241]
 layout_mode = 2
 theme_override_constants/margin_left = 100
-theme_override_constants/margin_top = 250
+theme_override_constants/margin_top = 160
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 50
 
@@ -91,10 +101,6 @@ layout_mode = 2
 theme_override_constants/margin_left = 400
 theme_override_constants/margin_right = 400
 
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=596812071]
-layout_mode = 0
-offset_top = 1.0
-offset_right = 1278.0
-offset_bottom = 720.0
-mouse_filter = 2
-color = Color(0, 0, 0, 0)
+[node name="MaskModule" parent="." unique_id=1517707074 instance=ExtResource("4_racf3")]
+position = Vector2(647, 469)
+scale = Vector2(1.9200001, 1.9200001)

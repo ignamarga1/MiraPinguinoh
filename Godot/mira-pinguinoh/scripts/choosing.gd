@@ -17,4 +17,7 @@ func _on_button_yes_pressed() -> void:
 
 
 func _on_button_no_pressed() -> void:
-	pass # Replace with function body.
+	
+	$MarginContainer/VBoxContainer/MarginContainer/AnimationPlayer.play('show_fade')
+	await get_tree().create_timer(3).timeout
+	get_tree().change_scene_to_file("res://scenes/game_over.tscn")

@@ -17,3 +17,5 @@ func _ready() -> void:
 	nariz.texture = Mask.composition_fragments.mask_fragments[3][fragments_id[3]]
 	boca.texture = Mask.composition_fragments.mask_fragments[4][fragments_id[4]]
 	
+func make_invisible() -> void:
+	visible = false
