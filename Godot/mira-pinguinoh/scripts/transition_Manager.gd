@@ -12,6 +12,7 @@ func _process(delta: float) -> void:
 	pass
 
 func go_to_level(n_level:int):
+	await get_tree().create_timer(1).timeout
 	if(n_level !=1):
 		Mask.increment_level_number()
 	get_tree().change_scene_to_file("res://scenes/select_mask_fragment.tscn")
