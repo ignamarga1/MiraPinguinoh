@@ -14,7 +14,7 @@ const composition_fragments = preload("res://scripts/composition_fragments.gd")
 @export var mask_fragment_id_3 : int = 0
 @export var mask_fragment_id_4 : int = 0
 
-@export var level : int = 2
+@export var level : int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -44,13 +44,8 @@ func update_fragment_id(selected_option : int) -> void:
 
 func update_mask_visibility() -> void:
 	match level:
-		0 : 
-			mask_fragment_0.visible = true
-		1 : 
-			mask_fragment_1.visible = true
-		2 : 
-			mask_fragment_2.visible = true
-		3 : 
-			mask_fragment_3.visible = true
-		4 : 
-			mask_fragment_4.visible = true
+		0 : mask_fragment_0.visible = true
+		1 : mask_fragment_1.visible = true
+		2 : mask_fragment_2.visible = true
+		3 : mask_fragment_3.visible = true
+		4 : mask_fragment_4.visible = true

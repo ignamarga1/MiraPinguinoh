@@ -8,8 +8,8 @@
 [node name="LogicalDoors" type="Node2D" unique_id=274553309]
 
 [node name="YellowBg" type="Sprite2D" parent="." unique_id=1972976084]
-position = Vector2(632, 314)
-scale = Vector2(0.75, 0.75)
+position = Vector2(632, 313.99994)
+scale = Vector2(0.75, 0.74999994)
 texture = ExtResource("1_t7chq")
 
 [node name="LogicDoors" parent="." unique_id=682151997 instance=ExtResource("2_m55pc")]

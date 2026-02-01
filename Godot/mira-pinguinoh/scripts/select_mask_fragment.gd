@@ -6,6 +6,8 @@ const composition_fragments = preload("res://scripts/composition_fragments.gd")
 @onready var button_2: Button = $Button2
 @onready var button_3: Button = $Button3
 
+@onready var mask_bg: Sprite2D = $MaskBg
+
 var sprite_button_1 : Sprite2D
 var sprite_button_2 : Sprite2D
 var sprite_button_3 : Sprite2D
@@ -15,6 +17,7 @@ var selected_option : int
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	change_bg_color()
 	Mask.make_visible()
 	
 	sprite_button_1 = button_1.get_child(0)
@@ -58,3 +61,12 @@ func update_current_mask_option() -> void:
 	Mask.update_fragment_id(selected_option)
 	Mask.update_mask_visibility()
 	print('New mask selected')
+
+func change_bg_color() -> void:
+	#verde, azul, amarillo, lila, rojo
+	match Mask.level:
+		0 : mask_bg.modulate = Color(Color.GREEN)
+		1 : mask_bg.modulate = Color(Color.BLUE)
+		2 : mask_bg.modulate = Color(Color.YELLOW)
+		3 : mask_bg.modulate = Color(Color.VIOLET)
+		4 : mask_bg.modulate = Color(Color.RED)
