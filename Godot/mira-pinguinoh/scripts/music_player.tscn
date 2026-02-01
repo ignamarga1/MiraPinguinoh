@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c53dixkdui3tb"]
+
+[ext_resource type="AudioStream" uid="uid://cdmc42fvqx6io" path="res://assets/Music/Mask on.wav" id="1_jxdhu"]
+[ext_resource type="Script" uid="uid://dfxfd7n0j8gpa" path="res://music_player.gd" id="1_ql6qh"]
+
+[node name="Music_Player" type="Node2D" unique_id=975666334]
+script = ExtResource("1_ql6qh")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1446160816]
+stream = ExtResource("1_jxdhu")
