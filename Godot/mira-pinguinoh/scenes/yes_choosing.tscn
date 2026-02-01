@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://dsr55e0j0l7ql"]
+[gd_scene format=3 uid="uid://by4prsm7uaboj"]
 
 [ext_resource type="FontFile" uid="uid://cltfsflsy53sv" path="res://assets/Cardo/Cardo-Bold.ttf" id="1_hxcyq"]
-[ext_resource type="Script" uid="uid://clq3mpmqcyyui" path="res://scripts/yes_choosing.gd" id="1_uyxh7"]
+[ext_resource type="Script" path="res://scripts/yes_choosing.gd" id="1_uyxh7"]
 
 [sub_resource type="Animation" id="Animation_hxcyq"]
 length = 0.001

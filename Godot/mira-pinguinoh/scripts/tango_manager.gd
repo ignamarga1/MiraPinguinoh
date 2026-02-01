@@ -41,7 +41,7 @@ func on_player_interaction(i: int, j: int):
 	var errors = all_invalid_cells()
 	send_error_signal(errors)
 	
-	if filled_cells == 28 && len(errors) == 0:
+	if filled_cells == 26 && len(errors) == 0:
 		light_all_enbled(Color.DARK_RED)
 		SignalManager.the_next_level.emit(5)
 
