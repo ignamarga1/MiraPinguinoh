@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dkgp45megu7dv"]
+
+[ext_resource type="Script" uid="uid://bepbnjsbhodeo" path="res://scripts/escena_mock_3.gd" id="1_2jmpy"]
+
+[node name="Node2D" type="Node2D" unique_id=1798159776]
+script = ExtResource("1_2jmpy")
+
+[node name="Button" type="Button" parent="." unique_id=548779649]
+offset_left = 477.0
+offset_top = 305.0
+offset_right = 829.0
+offset_bottom = 430.0
+text = "Nivel 3"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

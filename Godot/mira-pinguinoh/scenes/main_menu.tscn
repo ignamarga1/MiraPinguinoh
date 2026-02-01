@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://6kcxfs8liu1a"]
+
+[ext_resource type="Script" uid="uid://cp78wp0y7fn1p" path="res://scripts/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://clbdno6us1udy" path="res://assets/Untitled_Artwork.webp" id="1_ekxnf"]
+[ext_resource type="FontFile" uid="uid://cltfsflsy53sv" path="res://assets/Cardo/Cardo-Bold.ttf" id="2_bqqt6"]
+
+[sub_resource type="Animation" id="Animation_bqqt6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wu84c"]
+resource_name = "fade_show"
+length = 2.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ln24"]
+_data = {
+&"RESET": SubResource("Animation_bqqt6"),
+&"fade_show": SubResource("Animation_wu84c")
+}
+
+[node name="MainMenu" type="Control" unique_id=1788983159]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bqqt6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=27436446]
+libraries/ = SubResource("AnimationLibrary_8ln24")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=785247416]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -84.0
+offset_right = 1284.0
+offset_bottom = 824.0
+texture = ExtResource("1_ekxnf")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2026549149]
+layout_mode = 0
+offset_right = 1293.0
+offset_bottom = 739.0
+color = Color(0, 0, 0, 0.823)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1463330003]
+layout_mode = 0
+offset_right = 1278.0
+offset_bottom = 716.0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1995651241]
+layout_mode = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 250
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 50
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer" unique_id=1378540638]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 60
+text = "La máscara (im)perfecta"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=840632320]
+layout_mode = 2
+theme_override_constants/margin_left = 400
+theme_override_constants/margin_right = 400
+
+[node name="Button" type="Button" parent="VBoxContainer/MarginContainer2" unique_id=292020808]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.86597997, 0.70895475, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.8666667, 0.70980394, 0, 1)
+theme_override_colors/icon_hover_color = Color(0.8666667, 0.70980394, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.8666667, 0.70980394, 0, 1)
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 50
+text = "Jugar"
+flat = true
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=596812071]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 1278.0
+offset_bottom = 720.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/Button" to="." method="_on_button_pressed"]

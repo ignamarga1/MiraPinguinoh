@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://b5wqtqy51py25"]
+
+[ext_resource type="Script" uid="uid://qhu6lgsu5vif" path="res://scenes/transition_scene.gd" id="1_aigh2"]
+[ext_resource type="FontFile" uid="uid://cltfsflsy53sv" path="res://assets/Cardo/Cardo-Bold.ttf" id="2_cqi5c"]
+[ext_resource type="Script" uid="uid://dfhouxvu32war" path="res://scenes/animation_player.gd" id="2_vydtp"]
+
+[sub_resource type="Animation" id="Animation_cqi5c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HBoxContainer/TextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HBoxContainer/TriangleLabel:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_vydtp"]
+resource_name = "show_text"
+length = 1.5666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HBoxContainer/TextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HBoxContainer/TriangleLabel:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.2, 1.5666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p2uiw"]
+_data = {
+&"RESET": SubResource("Animation_cqi5c"),
+&"show_text": SubResource("Animation_vydtp")
+}
+
+[node name="TransitionScene" type="Control" unique_id=1896213017]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aigh2")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=201891580]
+layout_mode = 0
+offset_right = 1285.0
+offset_bottom = 726.0
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1242669298]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 538.0
+offset_right = 1283.0
+offset_bottom = 721.0
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 30
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1595227631]
+layout_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer/HBoxContainer" unique_id=296509357]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_p2uiw")
+script = ExtResource("2_vydtp")
+
+[node name="TextLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=123854228]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_cqi5c")
+theme_override_font_sizes/font_size = 30
+text = "SAMPLE FJSDKFAHJF"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="TriangleLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1070191050]
+layout_mode = 2
+text = "     ▼"
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
