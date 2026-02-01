@@ -1,12 +1,19 @@
 [gd_scene format=3 uid="uid://y7g340yx1mg3"]
 
 [ext_resource type="Script" uid="uid://ckrfiji4ohs26" path="res://scripts/select_mask_fragment.gd" id="1_ymurh"]
+[ext_resource type="Texture2D" uid="uid://4gakmmjljf3c" path="res://assets/mask_bg.png" id="2_cjfp5"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ymurh"]
 load_path = "res://.godot/imported/mask.png-7a1b471f13f111416d7345a876394bc4.ctex"
 
 [node name="SelectMaskFragment" type="Node2D" unique_id=973922542]
 script = ExtResource("1_ymurh")
+
+[node name="MaskBg" type="Sprite2D" parent="." unique_id=78428410]
+z_index = -1
+position = Vector2(633.99994, 305)
+scale = Vector2(0.60432094, 0.56820995)
+texture = ExtResource("2_cjfp5")
 
 [node name="Button1" type="Button" parent="." unique_id=517778321]
 anchors_preset = 8
@@ -60,9 +67,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 920.0
+offset_left = 970.0
 offset_top = 450.0
-offset_right = 1057.0
+offset_right = 1107.0
 offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2

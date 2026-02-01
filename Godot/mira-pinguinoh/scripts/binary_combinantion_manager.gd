@@ -1,5 +1,7 @@
 extends Node
 
+@onready var label: Label = $"../Label"
+
 var board = [[false, false, false, false, false]]
 
 var combination = [[false, true, false, true, true]]
@@ -19,6 +21,8 @@ func on_player_interaction(i: int, j: int):
 
 	if board == combination:
 		light_all_enbled(Color.YELLOW)
+		label.text = "✓"
+
 
 func light_all_enbled(color: Color):
 	for i in range(0, len(board)):
