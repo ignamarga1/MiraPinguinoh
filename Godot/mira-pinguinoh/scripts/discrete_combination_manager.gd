@@ -1,8 +1,8 @@
 extends Node
 
-var board = [[0, 0, 0, 0, 0]]
+var board = [[0, 0, 0, 0]]
 
-var combination = [[1, 0, 3, 2, 2]]
+var combination = [[1, 0, 3, 2]]
 var limit = 4
 var colors = [
 	Color.WHITE,
@@ -15,15 +15,14 @@ var colors = [
 func _ready() -> void:
 	SignalManager.player_interaction.connect(on_player_interaction)
 	
-func on_player_interaction(i: int, j: int):
+func on_player_interaction(i: int, j: int):	
 	board[i][j] = board[i][j] + 1
 	if board[i][j] >= limit:
 		board[i][j] = 0
-	SignalManager.light_interactable.emit(i, j, colors[board[i][j]])
+	SignalManager.shift_tiles.emit(j)
 
 	if board == combination:
-		light_all_enbled(Color.PINK)
-
+		SignalManager.light_all_interactables.emit(Color.GREEN)
 func light_all_enbled(color: Color):
 	for i in range(0, len(board)):
 		for j in range(0, len(board[0])):

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://s7mag28t3fjo"]
+
+[ext_resource type="Texture2D" uid="uid://c2pjcn61bqwjs" path="res://assets/blue_bg.png" id="1_pkqsk"]
+[ext_resource type="PackedScene" uid="uid://bxqimg4rdjsvo" path="res://scenes/panels.tscn" id="2_cfgyx"]
+
+[node name="LevelPanels" type="Node2D" unique_id=148071727]
+
+[node name="BlueBg" type="Sprite2D" parent="." unique_id=1972980967]
+position = Vector2(632, 316)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_pkqsk")
+
+[node name="Panels" parent="." unique_id=1398434262 instance=ExtResource("2_cfgyx")]
+position = Vector2(632, 316)
+scale = Vector2(0.5, 0.5)

@@ -3,36 +3,48 @@
 [ext_resource type="Script" uid="uid://c6gfsri20urem" path="res://scripts/discrete_combination_manager.gd" id="1_dyixk"]
 [ext_resource type="PackedScene" uid="uid://2x2qewl56ta1" path="res://scenes/interactable_object.tscn" id="1_sqyth"]
 [ext_resource type="PackedScene" uid="uid://dc5gbt1e8usyy" path="res://scenes/player.tscn" id="2_dyixk"]
+[ext_resource type="PackedScene" uid="uid://dba7c7mgnnd4e" path="res://scenes/tile_column.tscn" id="4_dyixk"]
 
 [node name="DiscreteCombination" type="Node2D" unique_id=682151997]
-position = Vector2(307, 207)
-scale = Vector2(0.5, 0.5)
-script = ExtResource("1_dyixk")
 
 [node name="Interactables" type="Node2D" parent="." unique_id=1137079167]
-position = Vector2(631, 209)
 
 [node name="Interactable1" parent="Interactables" unique_id=1353283679 instance=ExtResource("1_sqyth")]
-position = Vector2(-400, 300)
+position = Vector2(-300, 300)
 
 [node name="Interactable2" parent="Interactables" unique_id=1833380359 instance=ExtResource("1_sqyth")]
-position = Vector2(-200, 300)
+position = Vector2(-100, 300)
 j = 1
 
 [node name="Interactable3" parent="Interactables" unique_id=1477618049 instance=ExtResource("1_sqyth")]
-position = Vector2(0, 300)
+position = Vector2(100, 300)
 j = 2
 
 [node name="Interactable4" parent="Interactables" unique_id=702804419 instance=ExtResource("1_sqyth")]
-position = Vector2(200, 300)
+position = Vector2(300, 300)
 j = 3
 
-[node name="Interactable5" parent="Interactables" unique_id=975825424 instance=ExtResource("1_sqyth")]
-position = Vector2(400, 300)
-j = 4
+[node name="Tiles" type="Node2D" parent="." unique_id=1732908376]
+position = Vector2(0, 100)
+scale = Vector2(0.75, 0.75)
+
+[node name="TileColumn1" parent="Tiles" unique_id=1334196998 instance=ExtResource("4_dyixk")]
+position = Vector2(-300, -250)
+
+[node name="TileColumn2" parent="Tiles" unique_id=42922863 instance=ExtResource("4_dyixk")]
+position = Vector2(-100, -250)
+column_number = 1
+
+[node name="TileColumn3" parent="Tiles" unique_id=448309722 instance=ExtResource("4_dyixk")]
+position = Vector2(100, -250)
+column_number = 2
+
+[node name="TileColumn4" parent="Tiles" unique_id=466671867 instance=ExtResource("4_dyixk")]
+position = Vector2(300, -250)
+column_number = 3
 
 [node name="Player" parent="." unique_id=1894066236 instance=ExtResource("2_dyixk")]
-position = Vector2(631, 652)
+position = Vector2(0, 450)
 
 [node name="GameManager" type="Node2D" parent="." unique_id=2142246096]
 script = ExtResource("1_dyixk")

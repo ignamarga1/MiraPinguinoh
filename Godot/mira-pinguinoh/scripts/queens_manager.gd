@@ -13,12 +13,13 @@ var queens_true = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SignalManager.player_interaction.connect(on_player_interaction)
+	SignalManager.light_all_interactables.emit(Color.DIM_GRAY)
 	
 func on_player_interaction(i: int, j: int):
 	if board[i][j]:
 		board[i][j] = false
 		queens_true = queens_true - 1
-		SignalManager.light_interactable.emit(i, j, Color.WHITE)
+		SignalManager.light_interactable.emit(i, j, Color.DIM_GRAY)
 		light_all_enbled(Color.GREEN)
 	else:
 		board[i][j] = true
@@ -29,7 +30,8 @@ func on_player_interaction(i: int, j: int):
 	send_error_signal(errors)
 	
 	if queens_true == 5 && len(errors) == 0:
-		light_all_enbled(Color.BLUE)
+		light_all_enbled(Color.PURPLE)
+		get_tree().change_scene_to_file("res://scenes/prueba.tscn")
 
 
 func all_invalid_queens():
