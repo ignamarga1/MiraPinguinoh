@@ -12,6 +12,7 @@
 load_path = "res://.godot/imported/mask.png-7a1b471f13f111416d7345a876394bc4.ctex"
 
 [node name="Mask" type="Node2D" unique_id=637967419]
+visible = false
 position = Vector2(-274, -105)
 script = ExtResource("1_rv8xw")
 
@@ -20,30 +21,30 @@ scale = Vector2(1.5, 1.5)
 script = ExtResource("2_8u57e")
 
 [node name="MaskBase" type="Sprite2D" parent="CompositionFragments" unique_id=1131327060]
-position = Vector2(611.33344, 247.00002)
+position = Vector2(611.33344, 213.00003)
 texture = SubResource("CompressedTexture2D_ymurh")
 
 [node name="MaskFragment1" type="Sprite2D" parent="CompositionFragments" unique_id=435432243]
 visible = false
-position = Vector2(611.33344, 187)
+position = Vector2(611.33344, 153)
 texture = ExtResource("4_0iq2y")
 
 [node name="MaskFragment2" type="Sprite2D" parent="CompositionFragments" unique_id=1868097786]
 visible = false
-position = Vector2(611.33344, 236.00002)
+position = Vector2(611.33344, 202.00003)
 texture = ExtResource("5_q5cp3")
 
 [node name="MaskFragment3" type="Sprite2D" parent="CompositionFragments" unique_id=396616274]
 visible = false
-position = Vector2(611.3334, 271.33356)
+position = Vector2(611.3334, 237.33356)
 texture = ExtResource("6_khdy1")
 
 [node name="MaskFragment4" type="Sprite2D" parent="CompositionFragments" unique_id=2026895389]
 visible = false
-position = Vector2(611.3334, 252.99997)
+position = Vector2(611.3334, 218.99997)
 texture = ExtResource("7_13g8o")
 
 [node name="MaskFragment5" type="Sprite2D" parent="CompositionFragments" unique_id=2007419411]
 visible = false
-position = Vector2(611.3334, 302.66663)
+position = Vector2(611.3334, 268.66666)
 texture = ExtResource("8_h7770")
