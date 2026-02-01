@@ -2,7 +2,7 @@ extends Node
 
 var board = [[0, 0, 0, 0]]
 
-var combination = [[1, 0, 3, 2]]
+var combination = [[2, 0, 3, 3]]
 var limit = 4
 var colors = [
 	Color.WHITE,
@@ -23,8 +23,5 @@ func on_player_interaction(i: int, j: int):
 
 	if board == combination:
 		SignalManager.light_all_interactables.emit(Color.GREEN)
-func light_all_enbled(color: Color):
-	for i in range(0, len(board)):
-		for j in range(0, len(board[0])):
-			if board[i][j]:
-				SignalManager.light_interactable.emit(i, j, color)
+		
+		
