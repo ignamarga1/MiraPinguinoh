@@ -22,11 +22,11 @@ var mask_fragments = [
 		preload("res://assets/everyone/ojos/ojos5.png")
 	],
 	[
-		preload("res://assets/everyone/narices/nariz1.png"),
-		preload("res://assets/everyone/narices/nariz2.png"),
-		preload("res://assets/everyone/narices/nariz3.png"),
-		preload("res://assets/everyone/narices/nariz4.png"),
-		preload("res://assets/everyone/narices/nariz5.png")
+		preload("res://assets/everyone/coloretes/colorete1.png"),
+		preload("res://assets/everyone/coloretes/colorete2.png"),
+		preload("res://assets/everyone/coloretes/colorete3.png"),
+		preload("res://assets/everyone/coloretes/colorete4.png"),
+		preload("res://assets/everyone/coloretes/colorete5.png")
 	],
 	[
 		preload("res://assets/everyone/narices/nariz1.png"),
