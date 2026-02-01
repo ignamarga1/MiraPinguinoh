@@ -21,6 +21,7 @@ Mask="*uid://chf11xfwio2hl"
 SignalManager="*uid://cyy4ib0o2x30n"
 TransitionManager="*uid://dg1qo2y5vrlm5"
 MaskManager="*uid://dr3c4i2fgub8f"
+MusicPlayer="*uid://c53dixkdui3tb"
 
 [display]
 

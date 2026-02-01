@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dcb83il8ukf8w" path="res://assets/square.png" id="1_gknyc"]
 [ext_resource type="Texture2D" uid="uid://cmtj070lsoasp" path="res://assets/interactable.png" id="3_1t2qe"]
 [ext_resource type="Texture2D" uid="uid://h4au18cpfwnf" path="res://assets/quote.png" id="4_ieyjc"]
+[ext_resource type="AudioStream" uid="uid://cenmrahitqcou" path="res://assets/Music/Sounds/Interactuable_sound.wav" id="5_35x0o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1cvqn"]
 size = Vector2(80, 80)
@@ -44,6 +45,10 @@ visible = false
 position = Vector2(29, -76)
 scale = Vector2(0.04, 0.04)
 texture = ExtResource("4_ieyjc")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1092675626]
+stream = ExtResource("5_35x0o")
+volume_db = -20.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
