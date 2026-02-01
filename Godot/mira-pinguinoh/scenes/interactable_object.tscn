@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bs2tc1aibw5js" path="res://scripts/interactable_object.gd" id="1_1cvqn"]
 [ext_resource type="Texture2D" uid="uid://dcb83il8ukf8w" path="res://assets/square.png" id="1_gknyc"]
+[ext_resource type="Texture2D" uid="uid://cmtj070lsoasp" path="res://assets/interactable.png" id="3_1t2qe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1cvqn"]
 size = Vector2(80, 80)
@@ -19,6 +20,7 @@ indicator = NodePath("Indicator")
 shape = SubResource("RectangleShape2D_1cvqn")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1085638741]
+modulate = Color(0, 0, 0, 1)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_gknyc")
 
@@ -30,9 +32,10 @@ position = Vector2(1, 42)
 shape = SubResource("RectangleShape2D_gknyc")
 
 [node name="Indicator" type="Sprite2D" parent="." unique_id=1868803806]
-position = Vector2(0, -75)
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("1_gknyc")
+modulate = Color(0.67, 0.67, 0.67, 1)
+position = Vector2(0, 7)
+scale = Vector2(0.045, 0.045)
+texture = ExtResource("3_1t2qe")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

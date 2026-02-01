@@ -10,6 +10,7 @@ var player_inside_interaction_area = false
 
 func _ready() -> void:
 	SignalManager.light_interactable.connect(light_indicator)
+	SignalManager.light_all_interactables.connect(light_all_indicators)
 
 func _process(delta: float) -> void:
 	var interaction_pressed = Input.is_action_just_pressed("Interact")
@@ -27,3 +28,6 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 func light_indicator(x: int, y: int, color: Color):
 	if x == i && y == j:
 		indicator.modulate = color
+
+func light_all_indicators(color: Color):
+	indicator.modulate = color
