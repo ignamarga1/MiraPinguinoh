@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://mkufw36tj4m7"]
+
+[ext_resource type="PackedScene" uid="uid://uy2cj7dqjql4" path="res://scenes/Queens.tscn" id="1_3t7ic"]
+[ext_resource type="Texture2D" uid="uid://bnmvyx82fqwmb" path="res://assets/purple_bg.png" id="1_o7cr8"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_o7cr8"]
+distance = 13.782791
+
+[node name="LevelQueens" type="Node2D" unique_id=412988810]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287287049]
+position = Vector2(632, 316)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_o7cr8")
+
+[node name="Queens" parent="." unique_id=682151997 instance=ExtResource("1_3t7ic")]
+position = Vector2(632, 316)
+scale = Vector2(0.5, 0.5)
+
+[node name="Walls" type="Node2D" parent="." unique_id=470689729]
+
+[node name="Wall 1" type="StaticBody2D" parent="Walls" unique_id=2105294128]
+position = Vector2(303, 70)
+rotation = -0.7853982
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 1" unique_id=1575815966]
+position = Vector2(0, 31)
+scale = Vector2(25.962904, -2.422285)
+shape = SubResource("WorldBoundaryShape2D_o7cr8")
+
+[node name="Wall 2" type="StaticBody2D" parent="Walls" unique_id=2080311777]
+position = Vector2(902.0001, 12.000023)
+rotation = 0.7853982
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 2" unique_id=622444299]
+position = Vector2(0, 31)
+scale = Vector2(25.962904, -2.422285)
+shape = SubResource("WorldBoundaryShape2D_o7cr8")
+
+[node name="Wall 3" type="StaticBody2D" parent="Walls" unique_id=1678811507]
+position = Vector2(350.00003, 601.00006)
+rotation = -2.3561945
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 3" unique_id=820566037]
+position = Vector2(0, 31)
+scale = Vector2(25.962904, -2.422285)
+shape = SubResource("WorldBoundaryShape2D_o7cr8")
+
+[node name="Wall 4" type="StaticBody2D" parent="Walls" unique_id=1189590692]
+position = Vector2(920, 598.99994)
+rotation = 2.3561945
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 4" unique_id=249652666]
+position = Vector2(0, 31)
+scale = Vector2(25.962904, -2.422285)
+shape = SubResource("WorldBoundaryShape2D_o7cr8")
+
+[node name="Wall 5" type="StaticBody2D" parent="Walls" unique_id=491467890]
+position = Vector2(1053, 310)
+rotation = 1.5707964
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 5" unique_id=281372656]
+position = Vector2(0, 31)
+scale = Vector2(25.962904, -2.422285)
+shape = SubResource("WorldBoundaryShape2D_o7cr8")
+
+[node name="Wall 6" type="StaticBody2D" parent="Walls" unique_id=1434445678]
+position = Vector2(616, -34)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 6" unique_id=1495397797]
+position = Vector2(0, 31)
+scale = Vector2(25.962904, -2.422285)
+shape = SubResource("WorldBoundaryShape2D_o7cr8")
+
+[node name="Wall 7" type="StaticBody2D" parent="Walls" unique_id=683504101]
+position = Vector2(632, 740)
+rotation = 3.1415927
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 7" unique_id=1112390074]
+position = Vector2(0, 31)
+scale = Vector2(25.962904, -2.422285)
+shape = SubResource("WorldBoundaryShape2D_o7cr8")
+
+[node name="Wall 8" type="StaticBody2D" parent="Walls" unique_id=764367393]
+position = Vector2(195, 312)
+rotation = 4.712389
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 8" unique_id=461443826]
+position = Vector2(0, 31)
+scale = Vector2(25.962904, -2.422285)
+shape = SubResource("WorldBoundaryShape2D_o7cr8")

@@ -2,6 +2,9 @@ extends Node
 
 signal player_interaction
 signal light_interactable
+signal light_all_interactables
 signal panel_steped
 signal light_panel
 signal light_all_panels
+signal shift_tiles
+signal the_next_level
