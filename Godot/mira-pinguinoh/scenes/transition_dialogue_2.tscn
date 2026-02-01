@@ -85,7 +85,7 @@ script = ExtResource("1_hk1pw")
 text = Array[String](["Buena elección...", "...", "Hay un destino correcto para ti, debes saber cómo aprovecharlo al máximo."])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=43166467]
-offset_right = 1276.0
+offset_right = 1284.0
 offset_bottom = 720.0
 color = Color(0, 0, 0, 1)
 

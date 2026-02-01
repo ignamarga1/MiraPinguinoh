@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bt41bxgptoueu"]
 
-[ext_resource type="Script" path="res://scripts/transition_dialogue_1.gd" id="1_f3tbk"]
+[ext_resource type="Script" uid="uid://bm3c730djf51e" path="res://scripts/transition_dialogue_1.gd" id="1_f3tbk"]
 [ext_resource type="FontFile" uid="uid://cltfsflsy53sv" path="res://assets/Cardo/Cardo-Bold.ttf" id="2_jlnc7"]
 
 [sub_resource type="Animation" id="Animation_n3ow4"]
@@ -85,7 +85,7 @@ script = ExtResource("1_f3tbk")
 text = Array[String](["Todo el mundo comienza con un lienzo en blanco", "Te toca a ti construir tu propia máscara", "Completa las tareas para ganar partes de máscara", "Y hazte a ti", "...", "Para encajar se ha de cambiar"])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=947438261]
-offset_right = 1276.0
+offset_right = 1290.0
 offset_bottom = 720.0
 color = Color(0, 0, 0, 1)
 

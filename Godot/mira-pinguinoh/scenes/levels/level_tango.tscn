@@ -40,11 +40,11 @@ scale = Vector2(25.962904, -2.422285)
 shape = SubResource("WorldBoundaryShape2D_ffk0g")
 
 [node name="Wall 3" type="StaticBody2D" parent="Walls" unique_id=353108310]
-position = Vector2(350.00003, 601.00006)
+position = Vector2(334.13235, 617.8296)
 rotation = -2.3561945
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 3" unique_id=1067212731]
-position = Vector2(0, 31)
+position = Vector2(0.74298096, 38.963623)
 scale = Vector2(25.962904, -2.422285)
 shape = SubResource("WorldBoundaryShape2D_ffk0g")
 

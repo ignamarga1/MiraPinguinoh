@@ -51,17 +51,18 @@ func update_mask_visibility() -> void:
 			get_tree().change_scene_to_file("res://scenes/transition_dialogue_2.tscn")
 		1 : 
 			mask_fragment_1.visible = true
-			get_tree().change_scene_to_file("res://scenes/transition_dialogue_3.tscn")
 			await get_tree().create_timer(1).timeout
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_3.tscn")
+			
 		2 : 
 			mask_fragment_2.visible = true
-			get_tree().change_scene_to_file("res://scenes/transition_dialogue_4.tscn")
 			await get_tree().create_timer(1).timeout
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_4.tscn")
 		3 : 
 			mask_fragment_3.visible = true
-			get_tree().change_scene_to_file("res://scenes/transition_dialogue_5.tscn")		
 			await get_tree().create_timer(1).timeout
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_5.tscn")		
 		4 : 
 			mask_fragment_4.visible = true
-			get_tree().change_scene_to_file("res://scenes/transition_dialogue_6.tscn")
 			await get_tree().create_timer(1).timeout
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_6.tscn")

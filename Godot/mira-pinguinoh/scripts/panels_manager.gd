@@ -28,7 +28,7 @@ func on_panel_step(i:int, j:int):
 		
 	if panels_complete():
 		SignalManager.light_all_panels.emit(Color.SKY_BLUE)
-		
+		SignalManager.the_next_level.emit(2)
 
 func panels_complete():
 	var result = true

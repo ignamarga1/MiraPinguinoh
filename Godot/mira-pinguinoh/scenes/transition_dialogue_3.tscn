@@ -85,7 +85,7 @@ script = ExtResource("1_lau4q")
 text = Array[String](["Buena elección...", "...", "Todas tus acciones desembocan en algo"])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=43166467]
-offset_right = 1276.0
+offset_right = 1302.0
 offset_bottom = 720.0
 color = Color(0, 0, 0, 1)
 

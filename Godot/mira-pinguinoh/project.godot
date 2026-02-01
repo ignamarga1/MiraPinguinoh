@@ -17,8 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Mask="*uid://dymd3rf6brn3l"
 SignalManager="*uid://cyy4ib0o2x30n"
+Mask="*uid://dymd3rf6brn3l"
+TransitionManager="*uid://dg1qo2y5vrlm5"
 
 [display]
 

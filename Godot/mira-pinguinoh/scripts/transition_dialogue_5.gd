@@ -22,7 +22,7 @@ func _process(delta: float) -> void:
 			set_text(currentText)
 			$MarginContainer/HBoxContainer/AnimationPlayer.play("text_show")
 	if textIndex == text.size():
-		get_tree().change_scene_to_file("res://scenes/escena_mock_5.tscn")
+		get_tree().change_scene_to_file("res://scenes/levels/level_tango.tscn")
 			
 func set_text(text: String):
 	txt_lbl.set_text(text)

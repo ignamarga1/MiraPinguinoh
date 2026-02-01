@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://s7mag28t3fjo"]
 
 [ext_resource type="Texture2D" uid="uid://c2pjcn61bqwjs" path="res://assets/blue_bg.png" id="1_pkqsk"]
-[ext_resource type="PackedScene" uid="uid://bxqimg4rdjsvo" path="res://scenes/panels.tscn" id="2_cfgyx"]
+[ext_resource type="PackedScene" uid="uid://c1uyfk65txowg" path="res://scenes/panels.tscn" id="2_cfgyx"]
 
 [node name="LevelPanels" type="Node2D" unique_id=148071727]
 

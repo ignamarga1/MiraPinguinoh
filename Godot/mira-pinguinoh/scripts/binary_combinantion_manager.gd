@@ -22,6 +22,7 @@ func on_player_interaction(i: int, j: int):
 	if board == combination:
 		light_all_enbled(Color.YELLOW)
 		label.text = "✓"
+		SignalManager.the_next_level.emit(3)
 
 
 func light_all_enbled(color: Color):

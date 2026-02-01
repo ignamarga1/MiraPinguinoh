@@ -25,6 +25,7 @@ func _ready() -> void:
 	sprite_button_3 = button_3.get_child(0)
 	
 	generate_mask_options()
+	$AnimationPlayer.play("text_show")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -60,6 +61,7 @@ func _on_button_3_button_down() -> void:
 func update_current_mask_option() -> void:
 	Mask.update_fragment_id(selected_option)
 	Mask.update_mask_visibility()
+	
 	print('New mask selected')
 
 func change_bg_color() -> void:

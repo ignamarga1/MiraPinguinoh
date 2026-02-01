@@ -43,6 +43,7 @@ func on_player_interaction(i: int, j: int):
 	
 	if filled_cells == 28 && len(errors) == 0:
 		light_all_enbled(Color.DARK_RED)
+		SignalManager.the_next_level.emit(5)
 
 func all_invalid_cells():
 	var invalid_cells = []

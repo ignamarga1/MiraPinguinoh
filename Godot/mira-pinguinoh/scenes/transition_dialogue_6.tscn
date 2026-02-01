@@ -85,7 +85,7 @@ script = ExtResource("1_y74hk")
 text = Array[String](["Buena elección...", "...", "Enhorabuena!", "Has completado el diseño de tu máscara perfecta. Una máscara original, construida por ti, como ninguna otra..."])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=43166467]
-offset_right = 1276.0
+offset_right = 1291.0
 offset_bottom = 720.0
 color = Color(0, 0, 0, 1)
 

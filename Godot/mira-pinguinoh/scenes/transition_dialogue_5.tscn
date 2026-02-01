@@ -85,7 +85,7 @@ script = ExtResource("1_sk6wf")
 text = Array[String](["Buena elección...", "...", "El equilibrio es la más importante virtud"])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=43166467]
-offset_right = 1276.0
+offset_right = 1295.0
 offset_bottom = 720.0
 color = Color(0, 0, 0, 1)
 

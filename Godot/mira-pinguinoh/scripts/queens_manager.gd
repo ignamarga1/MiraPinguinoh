@@ -31,7 +31,7 @@ func on_player_interaction(i: int, j: int):
 	
 	if queens_true == 5 && len(errors) == 0:
 		light_all_enbled(Color.PURPLE)
-		get_tree().change_scene_to_file("res://scenes/prueba.tscn")
+		SignalManager.the_next_level.emit(4)
 
 
 func all_invalid_queens():
