@@ -34,7 +34,7 @@ func on_player_interaction(i: int, j: int):
 	else:
 		board[i][j] = 0
 		filled_cells = filled_cells - 1
-		SignalManager.light_interactable.emit(i, j, Color.WHITE)
+		SignalManager.light_interactable.emit(i, j, Color.DIM_GRAY)
 	
 	light_suns_and_moons()
 	
