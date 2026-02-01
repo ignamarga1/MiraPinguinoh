@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://chf11xfwio2hl"]
+
+[ext_resource type="Script" uid="uid://dymd3rf6brn3l" path="res://scripts/mask.gd" id="1_rv8xw"]
+[ext_resource type="Texture2D" uid="uid://r8t1did4vf3r" path="res://assets/mask_fragment_tileset_1.png" id="2_2a672"]
+[ext_resource type="Script" uid="uid://c5hib4gkl604h" path="res://scripts/composition_fragments.gd" id="2_8u57e"]
+[ext_resource type="Texture2D" uid="uid://dvcd402csl67t" path="res://assets/mask_fragment_tileset_2.png" id="3_8u57e"]
+[ext_resource type="Texture2D" uid="uid://brv77kr0o56fu" path="res://assets/mask_fragment_tileset_3.png" id="4_0iq2y"]
+[ext_resource type="Texture2D" uid="uid://iy36aspjpqsu" path="res://assets/mask_fragment_tileset_4.png" id="5_q5cp3"]
+[ext_resource type="Texture2D" uid="uid://04gehfd0pfr3" path="res://assets/mask_fragment_tileset_5.png" id="6_khdy1"]
+
+[node name="Mask" type="Node2D" unique_id=637967419]
+visible = false
+script = ExtResource("1_rv8xw")
+
+[node name="CompositionFragments" type="Node2D" parent="." unique_id=1946109466]
+script = ExtResource("2_8u57e")
+
+[node name="MaskFragment1" type="Sprite2D" parent="CompositionFragments" unique_id=435432243]
+position = Vector2(796, 200)
+texture = ExtResource("2_2a672")
+
+[node name="MaskFragment2" type="Sprite2D" parent="CompositionFragments" unique_id=1868097786]
+position = Vector2(796, 236)
+texture = ExtResource("3_8u57e")
+
+[node name="MaskFragment3" type="Sprite2D" parent="CompositionFragments" unique_id=396616274]
+position = Vector2(796, 288)
+texture = ExtResource("4_0iq2y")
+
+[node name="MaskFragment4" type="Sprite2D" parent="CompositionFragments" unique_id=2026895389]
+position = Vector2(796, 347)
+texture = ExtResource("5_q5cp3")
+
+[node name="MaskFragment5" type="Sprite2D" parent="CompositionFragments" unique_id=2007419411]
+position = Vector2(796, 389)
+texture = ExtResource("6_khdy1")

@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://bxqimg4rdjsvo"]
+
+[ext_resource type="PackedScene" uid="uid://bjehvxi102fyv" path="res://scenes/panel.tscn" id="1_ks6so"]
+[ext_resource type="Script" uid="uid://4u3khifmhche" path="res://scripts/panels_manager.gd" id="3_f0sd8"]
+[ext_resource type="PackedScene" uid="uid://dc5gbt1e8usyy" path="res://scenes/player.tscn" id="3_hw3he"]
+
+[node name="Panels" type="Node2D" unique_id=1398434262]
+position = Vector2(673, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="GroundPanels" type="Node2D" parent="." unique_id=1805458950]
+
+[node name="Row 1" type="Node2D" parent="GroundPanels" unique_id=500346057]
+position = Vector2(0, 400)
+
+[node name="Panel 1" parent="GroundPanels/Row 1" unique_id=469355997 instance=ExtResource("1_ks6so")]
+position = Vector2(-400, 0)
+
+[node name="Panel 2" parent="GroundPanels/Row 1" unique_id=1211317226 instance=ExtResource("1_ks6so")]
+position = Vector2(-200, 0)
+j = 1
+
+[node name="Panel 3" parent="GroundPanels/Row 1" unique_id=1142922064 instance=ExtResource("1_ks6so")]
+j = 2
+
+[node name="Panel 4" parent="GroundPanels/Row 1" unique_id=1092801108 instance=ExtResource("1_ks6so")]
+position = Vector2(200, 0)
+j = 3
+
+[node name="Panel 5" parent="GroundPanels/Row 1" unique_id=1091989501 instance=ExtResource("1_ks6so")]
+position = Vector2(400, 0)
+j = 4
+
+[node name="Row 2" type="Node2D" parent="GroundPanels" unique_id=2112828386]
+position = Vector2(0, 200)
+
+[node name="Panel 1" parent="GroundPanels/Row 2" unique_id=919512324 instance=ExtResource("1_ks6so")]
+position = Vector2(-400, 0)
+i = 1
+
+[node name="Panel 2" parent="GroundPanels/Row 2" unique_id=1554814287 instance=ExtResource("1_ks6so")]
+position = Vector2(-200, 0)
+i = 1
+j = 1
+
+[node name="Panel 3" parent="GroundPanels/Row 2" unique_id=629510654 instance=ExtResource("1_ks6so")]
+i = 1
+j = 2
+
+[node name="Panel 4" parent="GroundPanels/Row 2" unique_id=1797605425 instance=ExtResource("1_ks6so")]
+position = Vector2(200, 0)
+i = 1
+j = 3
+
+[node name="Panel 5" parent="GroundPanels/Row 2" unique_id=51715074 instance=ExtResource("1_ks6so")]
+position = Vector2(400, 0)
+i = 1
+j = 4
+
+[node name="Row 3" type="Node2D" parent="GroundPanels" unique_id=1705706487]
+
+[node name="Panel 1" parent="GroundPanels/Row 3" unique_id=389613169 instance=ExtResource("1_ks6so")]
+position = Vector2(-400, 0)
+i = 2
+
+[node name="Panel 2" parent="GroundPanels/Row 3" unique_id=393412755 instance=ExtResource("1_ks6so")]
+position = Vector2(-200, 0)
+i = 2
+j = 1
+
+[node name="Panel 3" parent="GroundPanels/Row 3" unique_id=1933996755 instance=ExtResource("1_ks6so")]
+i = 2
+j = 2
+
+[node name="Panel 4" parent="GroundPanels/Row 3" unique_id=198829891 instance=ExtResource("1_ks6so")]
+position = Vector2(200, 0)
+i = 2
+j = 3
+
+[node name="Panel 5" parent="GroundPanels/Row 3" unique_id=1544368921 instance=ExtResource("1_ks6so")]
+position = Vector2(400, 0)
+i = 2
+j = 4
+
+[node name="Row 4" type="Node2D" parent="GroundPanels" unique_id=497253016]
+position = Vector2(0, -200)
+
+[node name="Panel 1" parent="GroundPanels/Row 4" unique_id=588037091 instance=ExtResource("1_ks6so")]
+position = Vector2(-400, 0)
+i = 3
+
+[node name="Panel 2" parent="GroundPanels/Row 4" unique_id=445858923 instance=ExtResource("1_ks6so")]
+position = Vector2(-200, 0)
+i = 3
+j = 1
+
+[node name="Panel 3" parent="GroundPanels/Row 4" unique_id=472649362 instance=ExtResource("1_ks6so")]
+i = 3
+j = 2
+
+[node name="Panel 4" parent="GroundPanels/Row 4" unique_id=106526680 instance=ExtResource("1_ks6so")]
+position = Vector2(200, 0)
+i = 3
+j = 3
+
+[node name="Panel 5" parent="GroundPanels/Row 4" unique_id=1150558869 instance=ExtResource("1_ks6so")]
+position = Vector2(400, 0)
+i = 3
+j = 4
+
+[node name="Row 5" type="Node2D" parent="GroundPanels" unique_id=1622257191]
+position = Vector2(0, -400)
+
+[node name="Panel 1" parent="GroundPanels/Row 5" unique_id=1394384198 instance=ExtResource("1_ks6so")]
+position = Vector2(-400, 0)
+i = 4
+
+[node name="Panel 2" parent="GroundPanels/Row 5" unique_id=1404302313 instance=ExtResource("1_ks6so")]
+position = Vector2(-200, 0)
+i = 4
+j = 1
+
+[node name="Panel 3" parent="GroundPanels/Row 5" unique_id=1779592849 instance=ExtResource("1_ks6so")]
+i = 4
+j = 2
+
+[node name="Panel 4" parent="GroundPanels/Row 5" unique_id=2018636093 instance=ExtResource("1_ks6so")]
+position = Vector2(200, 0)
+i = 4
+j = 3
+
+[node name="Panel 5" parent="GroundPanels/Row 5" unique_id=1581606476 instance=ExtResource("1_ks6so")]
+position = Vector2(400, 0)
+i = 4
+j = 4
+
+[node name="Player" parent="." unique_id=1894066236 instance=ExtResource("3_hw3he")]
+
+[node name="GameManager" type="Node2D" parent="." unique_id=920089112]
+script = ExtResource("3_f0sd8")

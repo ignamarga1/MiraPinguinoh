@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://caeqqqt5x20ab"]
+
+[ext_resource type="PackedScene" uid="uid://2x2qewl56ta1" path="res://scenes/interactable_object.tscn" id="1_0a4sx"]
+[ext_resource type="PackedScene" uid="uid://dc5gbt1e8usyy" path="res://scenes/player.tscn" id="2_8irrc"]
+[ext_resource type="Script" uid="uid://t17fi0ys02en" path="res://scripts/binary_combinantion_manager.gd" id="3_0a4sx"]
+
+[node name="LogicDoors" type="Node2D" unique_id=682151997]
+position = Vector2(307, 207)
+scale = Vector2(0.5, 0.5)
+
+[node name="Interactables" type="Node2D" parent="." unique_id=1137079167]
+position = Vector2(631, 209)
+
+[node name="Interactable1" parent="Interactables" unique_id=1353283679 instance=ExtResource("1_0a4sx")]
+position = Vector2(-400, 300)
+
+[node name="Interactable2" parent="Interactables" unique_id=1833380359 instance=ExtResource("1_0a4sx")]
+position = Vector2(-200, 300)
+j = 1
+
+[node name="Interactable3" parent="Interactables" unique_id=1477618049 instance=ExtResource("1_0a4sx")]
+position = Vector2(0, 300)
+j = 2
+
+[node name="Interactable4" parent="Interactables" unique_id=702804419 instance=ExtResource("1_0a4sx")]
+position = Vector2(200, 300)
+j = 3
+
+[node name="Interactable5" parent="Interactables" unique_id=975825424 instance=ExtResource("1_0a4sx")]
+position = Vector2(400, 300)
+j = 4
+
+[node name="Player" parent="." unique_id=1894066236 instance=ExtResource("2_8irrc")]
+position = Vector2(631, 652)
+
+[node name="GameManager" type="Node2D" parent="." unique_id=2142246096]
+script = ExtResource("3_0a4sx")
