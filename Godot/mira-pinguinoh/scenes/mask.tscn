@@ -1,36 +1,49 @@
 [gd_scene format=3 uid="uid://chf11xfwio2hl"]
 
 [ext_resource type="Script" uid="uid://dymd3rf6brn3l" path="res://scripts/mask.gd" id="1_rv8xw"]
-[ext_resource type="Texture2D" uid="uid://r8t1did4vf3r" path="res://assets/mask_fragment_tileset_1.png" id="2_2a672"]
 [ext_resource type="Script" uid="uid://c5hib4gkl604h" path="res://scripts/composition_fragments.gd" id="2_8u57e"]
-[ext_resource type="Texture2D" uid="uid://dvcd402csl67t" path="res://assets/mask_fragment_tileset_2.png" id="3_8u57e"]
-[ext_resource type="Texture2D" uid="uid://brv77kr0o56fu" path="res://assets/mask_fragment_tileset_3.png" id="4_0iq2y"]
-[ext_resource type="Texture2D" uid="uid://iy36aspjpqsu" path="res://assets/mask_fragment_tileset_4.png" id="5_q5cp3"]
-[ext_resource type="Texture2D" uid="uid://04gehfd0pfr3" path="res://assets/mask_fragment_tileset_5.png" id="6_khdy1"]
+[ext_resource type="Texture2D" uid="uid://coe5ndb1beqkr" path="res://assets/mask/mask_fragment_0/mask_fragment_0_tileset.png" id="4_0iq2y"]
+[ext_resource type="Texture2D" uid="uid://dac4n1nwf4og" path="res://assets/mask/mask_fragment_1/mask_fragment_1_tileset.png" id="5_q5cp3"]
+[ext_resource type="Texture2D" uid="uid://dg1dglbx3odaq" path="res://assets/mask/mask_fragment_2/mask_fragment_2_tileset.png" id="6_khdy1"]
+[ext_resource type="Texture2D" uid="uid://b7awm0tfaa3wj" path="res://assets/mask/mask_fragment_3/mask_fragment_3_tileset.png" id="7_13g8o"]
+[ext_resource type="Texture2D" uid="uid://mjhhi1vg4ujm" path="res://assets/mask/mask_fragment_4/mask_fragment_4_tileset.png" id="8_h7770"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ymurh"]
+load_path = "res://.godot/imported/mask.png-7a1b471f13f111416d7345a876394bc4.ctex"
 
 [node name="Mask" type="Node2D" unique_id=637967419]
-visible = false
+position = Vector2(-274, -105)
 script = ExtResource("1_rv8xw")
 
 [node name="CompositionFragments" type="Node2D" parent="." unique_id=1946109466]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("2_8u57e")
 
+[node name="MaskBase" type="Sprite2D" parent="CompositionFragments" unique_id=1131327060]
+position = Vector2(611.33344, 247.00002)
+texture = SubResource("CompressedTexture2D_ymurh")
+
 [node name="MaskFragment1" type="Sprite2D" parent="CompositionFragments" unique_id=435432243]
-position = Vector2(796, 200)
-texture = ExtResource("2_2a672")
-
-[node name="MaskFragment2" type="Sprite2D" parent="CompositionFragments" unique_id=1868097786]
-position = Vector2(796, 236)
-texture = ExtResource("3_8u57e")
-
-[node name="MaskFragment3" type="Sprite2D" parent="CompositionFragments" unique_id=396616274]
-position = Vector2(796, 288)
+visible = false
+position = Vector2(611.33344, 187)
 texture = ExtResource("4_0iq2y")
 
-[node name="MaskFragment4" type="Sprite2D" parent="CompositionFragments" unique_id=2026895389]
-position = Vector2(796, 347)
+[node name="MaskFragment2" type="Sprite2D" parent="CompositionFragments" unique_id=1868097786]
+visible = false
+position = Vector2(611.33344, 236.00002)
 texture = ExtResource("5_q5cp3")
 
-[node name="MaskFragment5" type="Sprite2D" parent="CompositionFragments" unique_id=2007419411]
-position = Vector2(796, 389)
+[node name="MaskFragment3" type="Sprite2D" parent="CompositionFragments" unique_id=396616274]
+visible = false
+position = Vector2(611.3334, 271.33356)
 texture = ExtResource("6_khdy1")
+
+[node name="MaskFragment4" type="Sprite2D" parent="CompositionFragments" unique_id=2026895389]
+visible = false
+position = Vector2(611.3334, 252.99997)
+texture = ExtResource("7_13g8o")
+
+[node name="MaskFragment5" type="Sprite2D" parent="CompositionFragments" unique_id=2007419411]
+visible = false
+position = Vector2(611.3334, 302.66663)
+texture = ExtResource("8_h7770")

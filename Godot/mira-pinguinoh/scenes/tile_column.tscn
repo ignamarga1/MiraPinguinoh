@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://dba7c7mgnnd4e"]
 
-[ext_resource type="Texture2D" uid="uid://dcb83il8ukf8w" path="res://assets/square.png" id="1_2ooo2"]
 [ext_resource type="Script" uid="uid://d3j7adme2831j" path="res://scripts/tile_column.gd" id="1_5l13l"]
+[ext_resource type="Texture2D" uid="uid://dkraxofu6h4l4" path="res://assets/splitted_wires/IMG_1089-tile-13.png" id="2_v0tp7"]
+[ext_resource type="Texture2D" uid="uid://bsjsbyc4hpuqs" path="res://assets/splitted_wires/IMG_1089-tile-9.png" id="3_w4otn"]
+[ext_resource type="Texture2D" uid="uid://dqhseaw5vafew" path="res://assets/splitted_wires/IMG_1089-tile-5.png" id="4_4mvgo"]
+[ext_resource type="Texture2D" uid="uid://c76kbrq6i55jj" path="res://assets/splitted_wires/IMG_1089-tile-1.png" id="5_h65y6"]
 
 [node name="TileColumn" type="Node2D" unique_id=1334196998 node_paths=PackedStringArray("tile1", "tile2", "tile3", "tile4")]
 script = ExtResource("1_5l13l")
@@ -11,24 +14,21 @@ tile3 = NodePath("Tile 3")
 tile4 = NodePath("Tile 4")
 
 [node name="Tile 1" type="Sprite2D" parent="." unique_id=1880446226]
-modulate = Color(0, 1, 1, 1)
 position = Vector2(0, 300)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_2ooo2")
+texture = ExtResource("2_v0tp7")
 
 [node name="Tile 2" type="Sprite2D" parent="." unique_id=781444683]
-modulate = Color(1, 0, 1, 1)
 position = Vector2(0, 100)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_2ooo2")
+texture = ExtResource("3_w4otn")
 
 [node name="Tile 3" type="Sprite2D" parent="." unique_id=38567294]
-modulate = Color(1, 1, 0, 1)
 position = Vector2(0, -100)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_2ooo2")
+texture = ExtResource("4_4mvgo")
 
 [node name="Tile 4" type="Sprite2D" parent="." unique_id=163080823]
 position = Vector2(0, -300)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_2ooo2")
+texture = ExtResource("5_h65y6")
