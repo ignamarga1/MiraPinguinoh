@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://uy2cj7dqjql4" path="res://scenes/Queens.tscn" id="1_3t7ic"]
 [ext_resource type="Texture2D" uid="uid://bnmvyx82fqwmb" path="res://assets/purple_bg.png" id="1_o7cr8"]
+[ext_resource type="Texture2D" uid="uid://bwx51pm8mfh5x" path="res://assets/queens_hint.png" id="3_2sh3w"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_o7cr8"]
 distance = 13.782791
@@ -89,3 +90,15 @@ rotation = 4.712389
 position = Vector2(0, 31)
 scale = Vector2(25.962904, -2.422285)
 shape = SubResource("WorldBoundaryShape2D_o7cr8")
+
+[node name="QueensHint" type="Sprite2D" parent="." unique_id=1860042954]
+position = Vector2(325, 300)
+rotation = -1.5707964
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_2sh3w")
+
+[node name="QueensHint2" type="Sprite2D" parent="." unique_id=111970690]
+position = Vector2(925, 300)
+rotation = -1.5707964
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_2sh3w")

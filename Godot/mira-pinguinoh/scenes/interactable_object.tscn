@@ -3,16 +3,18 @@
 [ext_resource type="Script" uid="uid://bs2tc1aibw5js" path="res://scripts/interactable_object.gd" id="1_1cvqn"]
 [ext_resource type="Texture2D" uid="uid://dcb83il8ukf8w" path="res://assets/square.png" id="1_gknyc"]
 [ext_resource type="Texture2D" uid="uid://cmtj070lsoasp" path="res://assets/interactable.png" id="3_1t2qe"]
+[ext_resource type="Texture2D" uid="uid://h4au18cpfwnf" path="res://assets/quote.png" id="4_ieyjc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1cvqn"]
 size = Vector2(80, 80)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gknyc"]
-size = Vector2(68, 11)
+size = Vector2(68, 19.5)
 
-[node name="Interactable" type="Node2D" unique_id=1353283679 node_paths=PackedStringArray("indicator")]
+[node name="Interactable" type="Node2D" unique_id=1353283679 node_paths=PackedStringArray("indicator", "quote")]
 script = ExtResource("1_1cvqn")
 indicator = NodePath("Indicator")
+quote = NodePath("Quote")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=307102129]
 
@@ -28,7 +30,7 @@ texture = ExtResource("1_gknyc")
 collision_layer = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=527323308]
-position = Vector2(1, 42)
+position = Vector2(1, 46.25)
 shape = SubResource("RectangleShape2D_gknyc")
 
 [node name="Indicator" type="Sprite2D" parent="." unique_id=1868803806]
@@ -36,6 +38,12 @@ modulate = Color(0.67, 0.67, 0.67, 1)
 position = Vector2(0, 7)
 scale = Vector2(0.045, 0.045)
 texture = ExtResource("3_1t2qe")
+
+[node name="Quote" type="Sprite2D" parent="." unique_id=567881316]
+visible = false
+position = Vector2(29, -76)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("4_ieyjc")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
