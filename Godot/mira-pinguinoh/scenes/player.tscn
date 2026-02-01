@@ -1,7 +1,54 @@
 [gd_scene format=3 uid="uid://dc5gbt1e8usyy"]
 
-[ext_resource type="Texture2D" uid="uid://bf6e5ihrp4m2m" path="res://assets/fueguito.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://ctdsrujq4nphg" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://bvdj7dey8xi18" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-1.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://c4he3ad1ick15" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-2.png" id="3_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://cf50bei0ga3vn" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-3.png" id="4_3v2ag"]
+[ext_resource type="Texture2D" uid="uid://bouirjf1wsdfl" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-4.png" id="5_jej6c"]
+[ext_resource type="Texture2D" uid="uid://bq6a2wo4poiu7" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-5.png" id="6_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://boupke1panc46" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-6.png" id="7_oprun"]
+[ext_resource type="Texture2D" uid="uid://djfy0csue6qea" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-7.png" id="8_a8ls1"]
+[ext_resource type="Texture2D" uid="uid://cs0xfn5d21ec6" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-8.png" id="9_qfm1y"]
+[ext_resource type="Texture2D" uid="uid://e0nphkqy4jhw" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-9.png" id="10_fulsm"]
+[ext_resource type="Texture2D" uid="uid://bvtojcbcofeae" path="res://assets/fuego/Ilustracio╠ün_sin_ti╠ütulo-10.png" id="11_4r5pv"]
+
+[sub_resource type="Animation" id="Animation_60mlk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_g2els")]
+}
+
+[sub_resource type="Animation" id="Animation_i4ail"]
+resource_name = "player"
+length = 9.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_g2els"), ExtResource("3_d2wvv"), ExtResource("4_3v2ag"), ExtResource("5_jej6c"), ExtResource("6_f1ej7"), ExtResource("7_oprun"), ExtResource("8_a8ls1"), ExtResource("9_qfm1y"), ExtResource("10_fulsm"), ExtResource("11_4r5pv")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a38lo"]
+_data = {
+&"RESET": SubResource("Animation_60mlk"),
+&"player": SubResource("Animation_i4ail")
+}
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
 radius = 27.0
@@ -11,8 +58,13 @@ collision_mask = 5
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=897257649]
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("1_3vyb7")
+position = Vector2(0, -5)
+scale = Vector2(0.11015625, 0.11015625)
+texture = ExtResource("2_g2els")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" unique_id=1850980308]
+libraries/ = SubResource("AnimationLibrary_a38lo")
+speed_scale = 10.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2142039347]
 position = Vector2(0, 34)

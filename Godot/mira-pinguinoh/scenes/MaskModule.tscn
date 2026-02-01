@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dgwjtaiyl386a"]
+
+[ext_resource type="Script" uid="uid://b4jjufmg8ud1w" path="res://scripts/mask_module.gd" id="1_46w0r"]
+[ext_resource type="Texture2D" uid="uid://uovdp2tuckc4" path="res://assets/mask/mask_fragment_0/mask_0_1.png" id="1_n7bk3"]
+[ext_resource type="Texture2D" uid="uid://culy07glm0pqw" path="res://assets/mask/mask_fragment_1/mask_1_1.png" id="2_nairq"]
+[ext_resource type="Texture2D" uid="uid://clit4apiakj8e" path="res://assets/mask/mask_fragment_2/mask_2_1.png" id="4_1f3nn"]
+[ext_resource type="Texture2D" uid="uid://dwf62xfmchp8w" path="res://assets/mask/mask_fragment_3/mask_3_1.png" id="5_ojvys"]
+[ext_resource type="Texture2D" uid="uid://uatx7x3edo65" path="res://assets/mask/mask_fragment_4/mask_4_1.png" id="6_xh0f3"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_08ljn"]
+load_path = "res://.godot/imported/mask.png-7a1b471f13f111416d7345a876394bc4.ctex"
+
+[node name="MaskModule" type="Node2D" unique_id=1517707074]
+script = ExtResource("1_46w0r")
+
+[node name="MaskBase" type="Sprite2D" parent="." unique_id=299908887]
+texture = SubResource("CompressedTexture2D_08ljn")
+
+[node name="Frente" type="Sprite2D" parent="." unique_id=1336291887]
+position = Vector2(0, -63)
+texture = ExtResource("1_n7bk3")
+
+[node name="Ojos" type="Sprite2D" parent="." unique_id=378760111]
+position = Vector2(0, -17)
+texture = ExtResource("2_nairq")
+
+[node name="Mofletes" type="Sprite2D" parent="." unique_id=1539033404]
+position = Vector2(0, 22)
+texture = ExtResource("4_1f3nn")
+
+[node name="Nariz" type="Sprite2D" parent="." unique_id=398489399]
+position = Vector2(0, 13)
+texture = ExtResource("5_ojvys")
+
+[node name="Boca" type="Sprite2D" parent="." unique_id=807414957]
+position = Vector2(0, 56)
+texture = ExtResource("6_xh0f3")
