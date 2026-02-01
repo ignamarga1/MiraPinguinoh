@@ -82,7 +82,7 @@ _data = {
 
 [node name="TransitionDialogue2" type="Node2D" unique_id=1157472764]
 script = ExtResource("1_y74hk")
-text = Array[String](["sdasadas"])
+text = Array[String](["Buena elección...", "...", "Enhorabuena!", "Has completado el diseño de tu máscara perfecta. Una máscara original, construida por ti, como ninguna otra..."])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=43166467]
 offset_right = 1276.0

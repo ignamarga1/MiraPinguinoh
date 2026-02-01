@@ -82,7 +82,7 @@ _data = {
 
 [node name="TransitionDialogue2" type="Node2D" unique_id=1157472764]
 script = ExtResource("1_80ovf")
-text = Array[String](["srfwfefw"])
+text = Array[String](["Buena elección...", "...", "Cada cual tiene su propio camino, aunque a veces necesiten ayuda para encontrarlo"])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=43166467]
 offset_right = 1276.0

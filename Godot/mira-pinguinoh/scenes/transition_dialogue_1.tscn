@@ -82,7 +82,7 @@ _data = {
 
 [node name="TransitionDialogue" type="Node2D" unique_id=101216973]
 script = ExtResource("1_f3tbk")
-text = Array[String](["Todo el mundo comienza con un lienzo en blanco", "Te toca a ti construir tu propia máscara", "Completa las tareas para ganar partes de máscara", "Y hazte a ti"])
+text = Array[String](["Todo el mundo comienza con un lienzo en blanco", "Te toca a ti construir tu propia máscara", "Completa las tareas para ganar partes de máscara", "Y hazte a ti", "...", "Para encajar se ha de cambiar"])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=947438261]
 offset_right = 1276.0

@@ -23,6 +23,7 @@ func on_player_interaction(i: int, j: int):
 
 	if board == combination:
 		SignalManager.light_all_interactables.emit(Color.GREEN)
+		
 func light_all_enbled(color: Color):
 	for i in range(0, len(board)):
 		for j in range(0, len(board[0])):
