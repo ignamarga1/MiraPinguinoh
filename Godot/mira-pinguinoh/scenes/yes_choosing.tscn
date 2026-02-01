@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://by4prsm7uaboj"]
+[gd_scene format=3 uid="uid://dsr55e0j0l7ql"]
 
 [ext_resource type="FontFile" uid="uid://cltfsflsy53sv" path="res://assets/Cardo/Cardo-Bold.ttf" id="1_hxcyq"]
 [ext_resource type="Script" path="res://scripts/yes_choosing.gd" id="1_uyxh7"]
@@ -64,7 +64,7 @@ theme_override_constants/margin_left = 50
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_hxcyq")
 theme_override_font_sizes/font_size = 39
-text = "Levanta el teclado y verás la mejor versión de ti."
+text = "Cierra la pantalla y verás la mejor versión de ti."
 visible_characters = 0
 visible_ratio = 0.0
 
