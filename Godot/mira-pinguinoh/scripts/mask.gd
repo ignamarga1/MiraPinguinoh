@@ -65,4 +65,3 @@ func update_mask_visibility() -> void:
 			mask_fragment_4.visible = true
 			get_tree().change_scene_to_file("res://scenes/transition_dialogue_6.tscn")
 			await get_tree().create_timer(1).timeout
-

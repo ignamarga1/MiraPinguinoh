@@ -17,9 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Mask="*uid://dymd3rf6brn3l"
 SignalManager="*uid://cyy4ib0o2x30n"
 MusicPlayer="*uid://c53dixkdui3tb"
+Mask="*uid://chf11xfwio2hl"
 
 [display]
 
