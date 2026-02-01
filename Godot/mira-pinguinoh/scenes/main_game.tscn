@@ -7,3 +7,5 @@
 script = ExtResource("1_72e8q")
 
 [node name="MainMenu" parent="." unique_id=1788983159 instance=ExtResource("2_72e8q")]
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
