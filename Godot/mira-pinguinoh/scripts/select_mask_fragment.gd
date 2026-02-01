@@ -43,7 +43,7 @@ func show_mask_options() -> void:
 	sprite_button_3.texture = composition_fragments.mask_fragments[Mask.level][mask_options[2]]
 
 func _on_button_1_button_down() -> void:
-	selected_option = mask_options[0]; 
+	selected_option = mask_options[0];
 	print(selected_option)
 	update_current_mask_option();
 
@@ -58,6 +58,7 @@ func _on_button_3_button_down() -> void:
 	update_current_mask_option()
 	
 func update_current_mask_option() -> void:
+	MaskManager.add_mask_fragment(Mask.level, selected_option)
 	Mask.update_fragment_id(selected_option)
 	Mask.update_mask_visibility()
 	print('New mask selected')

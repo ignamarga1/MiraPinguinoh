@@ -1,7 +1,12 @@
 class_name Player
 extends CharacterBody2D
 
+@onready var animation = $Sprite2D/AnimationPlayer
+
 @export var speed = 300.0
+
+func _ready() -> void:
+	animation.play("player")
 
 func _physics_process(delta: float) -> void:
 
