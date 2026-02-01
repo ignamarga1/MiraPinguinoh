@@ -53,5 +53,7 @@ func _ready() -> void:
 	narices.texture = mask_fragments[3][fragments[3]]
 	bocas.texture = mask_fragments[4][fragments[4]]
 	
-	await get_tree().create_timer(5).timeout
+	$AnimationPlayer.play("show_fade")
+	
+	await get_tree().create_timer(8).timeout
 	get_tree().change_scene_to_file("res://scenes/choosing.tscn")
