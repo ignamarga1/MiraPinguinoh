@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://6kcxfs8liu1a"]
+[gd_scene format=3 uid="uid://c1pomf333k8c3"]
 
-[ext_resource type="Script" uid="uid://cp78wp0y7fn1p" path="res://scripts/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://clbdno6us1udy" path="res://assets/Untitled_Artwork.webp" id="1_ekxnf"]
 [ext_resource type="FontFile" uid="uid://cltfsflsy53sv" path="res://assets/Cardo/Cardo-Bold.ttf" id="2_bqqt6"]
 

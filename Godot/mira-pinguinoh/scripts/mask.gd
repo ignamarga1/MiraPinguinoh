@@ -15,7 +15,7 @@ const composition_fragments = preload("res://scripts/composition_fragments.gd")
 @export var mask_fragment_id_4 : int = 0
 
 @export var level : int = 2
-
+var selected = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -46,11 +46,21 @@ func update_mask_visibility() -> void:
 	match level:
 		0 : 
 			mask_fragment_0.visible = true
+			await get_tree().create_timer(1).timeout
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_2.tscn")
 		1 : 
 			mask_fragment_1.visible = true
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_3.tscn")
+			await get_tree().create_timer(1).timeout
 		2 : 
 			mask_fragment_2.visible = true
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_4.tscn")
+			await get_tree().create_timer(1).timeout
 		3 : 
 			mask_fragment_3.visible = true
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_5.tscn")		
+			await get_tree().create_timer(1).timeout
 		4 : 
 			mask_fragment_4.visible = true
+			get_tree().change_scene_to_file("res://scenes/transition_dialogue_6.tscn")
+			await get_tree().create_timer(1).timeout
