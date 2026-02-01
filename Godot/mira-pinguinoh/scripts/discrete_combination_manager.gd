@@ -23,5 +23,6 @@ func on_player_interaction(i: int, j: int):
 
 	if board == combination:
 		SignalManager.light_all_interactables.emit(Color.GREEN)
+		SignalManager.the_next_level.emit(1)
 		
 		
