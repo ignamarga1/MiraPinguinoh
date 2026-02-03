@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c53dixkdui3tb"]
+
+[ext_resource type="Script" uid="uid://dfxfd7n0j8gpa" path="res://scripts/music_player.gd" id="1_8nf8j"]
+[ext_resource type="AudioStream" uid="uid://cdmc42fvqx6io" path="res://audio/Mask on.wav" id="2_wcudy"]
+[ext_resource type="AudioStream" uid="uid://cxh3fm7rq8ga1" path="res://audio/Sounds/Level_complete_sound.wav" id="3_2rqtp"]
+
+[node name="Music_Player" type="Node2D" unique_id=975666334]
+script = ExtResource("1_8nf8j")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1446160816]
+stream = ExtResource("2_wcudy")
+
+[node name="WinSound" type="AudioStreamPlayer2D" parent="." unique_id=329751440]
+stream = ExtResource("3_2rqtp")
+volume_db = -10.0

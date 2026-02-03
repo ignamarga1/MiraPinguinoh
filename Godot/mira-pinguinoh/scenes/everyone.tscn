@@ -2,8 +2,6 @@
 
 [ext_resource type="Script" uid="uid://nprp6jqxtae4" path="res://scripts/everyone.gd" id="1_3de5s"]
 [ext_resource type="Texture2D" uid="uid://r8stitlf0ysr" path="res://assets/everyone/base.png" id="1_c6wxy"]
-[ext_resource type="Texture2D" uid="uid://bialhebplwamy" path="res://assets/everyone/narices/nariz1.png" id="2_auo1v"]
-[ext_resource type="Texture2D" uid="uid://d3pp0dgmoow2g" path="res://assets/everyone/bocas/boca1 base.png" id="3_3de5s"]
 
 [sub_resource type="Animation" id="Animation_3de5s"]
 length = 0.001
@@ -58,27 +56,22 @@ texture = ExtResource("1_c6wxy")
 [node name="Frentes" type="Sprite2D" parent="." unique_id=1431714444]
 position = Vector2(635, 349.00003)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("1_c6wxy")
 
 [node name="Ojos" type="Sprite2D" parent="." unique_id=1783317816]
 position = Vector2(635, 349.00003)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("1_c6wxy")
 
 [node name="Mofletes" type="Sprite2D" parent="." unique_id=976130728]
 position = Vector2(635, 349.00003)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("1_c6wxy")
 
 [node name="Narices" type="Sprite2D" parent="." unique_id=951297275]
 position = Vector2(635, 349.00003)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("2_auo1v")
 
 [node name="Bocas" type="Sprite2D" parent="." unique_id=1012688498]
 position = Vector2(635, 349.00003)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("3_3de5s")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1491082379]
 offset_left = -3.0

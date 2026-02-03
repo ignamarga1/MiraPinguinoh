@@ -10,13 +10,13 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 
-	var h_direction := Input.get_axis("ui_left", "ui_right")
+	var h_direction := Input.get_axis("left", "right")
 	if h_direction:
 		velocity.x = h_direction * speed
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 	
-	var v_direction := Input.get_axis("ui_up", "ui_down")
+	var v_direction := Input.get_axis("up", "down")
 	if v_direction:
 		velocity.y = v_direction * speed
 	else:
