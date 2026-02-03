@@ -13,7 +13,7 @@ config_version=5
 config/name="MiraPinguinoh"
 run/main_scene="uid://b0hnwa6gc3evc"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://bkhddfalogpfx"
 
 [autoload]
 
