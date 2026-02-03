@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://caeqqqt5x20ab"]
+
+[ext_resource type="PackedScene" uid="uid://2x2qewl56ta1" path="res://scenes/interactable_object.tscn" id="1_0a4sx"]
+[ext_resource type="PackedScene" uid="uid://dc5gbt1e8usyy" path="res://scenes/player.tscn" id="2_8irrc"]
+[ext_resource type="Texture2D" uid="uid://cv2cufkfbeqma" path="res://assets/logical_doors.png" id="2_85kky"]
+[ext_resource type="Script" uid="uid://t17fi0ys02en" path="res://scripts/binary_combinantion_manager.gd" id="3_0a4sx"]
+[ext_resource type="Texture2D" uid="uid://keiwtlwbjnan" path="res://assets/logical_doors_hint_1.png" id="5_0lrri"]
+[ext_resource type="Texture2D" uid="uid://cw8mc7ukp0hb5" path="res://assets/logical_doors_hint_2.png" id="6_jolo0"]
+
+[node name="LogicDoors" type="Node2D" unique_id=682151997]
+
+[node name="Interactables" type="Node2D" parent="." unique_id=1137079167]
+
+[node name="Interactable1" parent="Interactables" unique_id=1353283679 instance=ExtResource("1_0a4sx")]
+position = Vector2(-300, 300)
+
+[node name="Interactable2" parent="Interactables" unique_id=1833380359 instance=ExtResource("1_0a4sx")]
+position = Vector2(-150, 300)
+j = 1
+
+[node name="Interactable3" parent="Interactables" unique_id=1477618049 instance=ExtResource("1_0a4sx")]
+position = Vector2(0, 300)
+j = 2
+
+[node name="Interactable4" parent="Interactables" unique_id=702804419 instance=ExtResource("1_0a4sx")]
+position = Vector2(150, 300)
+j = 3
+
+[node name="Interactable5" parent="Interactables" unique_id=975825424 instance=ExtResource("1_0a4sx")]
+position = Vector2(300, 300)
+j = 4
+
+[node name="Label" type="Label" parent="." unique_id=1815578599]
+offset_left = -28.0
+offset_top = -514.0
+offset_right = 27.0
+offset_bottom = -377.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 0.5)
+theme_override_font_sizes/font_size = 100
+text = "x"
+horizontal_alignment = 1
+
+[node name="Player" parent="." unique_id=1894066236 instance=ExtResource("2_8irrc")]
+position = Vector2(0, 450)
+
+[node name="GameManager" type="Node2D" parent="." unique_id=2142246096]
+script = ExtResource("3_0a4sx")
+
+[node name="hints" type="Node2D" parent="." unique_id=1982323530]
+
+[node name="LogicalDoors" type="Sprite2D" parent="hints" unique_id=1774036291]
+position = Vector2(6.7727413, -57)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.4909647)
+texture = ExtResource("2_85kky")
+
+[node name="LogicalDoorsHint1" type="Sprite2D" parent="hints" unique_id=553875563]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(-336, -259)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_0lrri")
+
+[node name="LogicalDoorsHint2" type="Sprite2D" parent="hints" unique_id=721705124]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(411.00003, -136)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("6_jolo0")

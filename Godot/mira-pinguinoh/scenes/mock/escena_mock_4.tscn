@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dm8aqelicyvd5"]
+
+[ext_resource type="Script" uid="uid://d3xna4wc102u4" path="res://scripts/escena_mock_4.gd" id="1_0h71l"]
+
+[node name="Node2D" type="Node2D" unique_id=938287682]
+script = ExtResource("1_0h71l")
+
+[node name="Button" type="Button" parent="." unique_id=1476618179]
+offset_left = 477.0
+offset_top = 305.0
+offset_right = 829.0
+offset_bottom = 430.0
+text = "Nivel 4"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

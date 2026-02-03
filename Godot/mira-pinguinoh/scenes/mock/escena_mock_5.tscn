@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://by20lhaalxmrl"]
+
+[ext_resource type="Script" uid="uid://d11ojt4c8om1x" path="res://scripts/escena_mock_5.gd" id="1_r85ul"]
+
+[node name="Node2D" type="Node2D" unique_id=521646967]
+script = ExtResource("1_r85ul")
+
+[node name="Button" type="Button" parent="." unique_id=2029992491]
+offset_left = 477.0
+offset_top = 305.0
+offset_right = 829.0
+offset_bottom = 430.0
+text = "Level 5
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

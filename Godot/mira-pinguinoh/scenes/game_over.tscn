@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://dtotk5c78bpgp"]
+
+[ext_resource type="Script" uid="uid://ktjyw18fvjtx" path="res://scripts/game_over.gd" id="1_tbwuq"]
+[ext_resource type="Texture2D" uid="uid://clbdno6us1udy" path="res://assets/Untitled_Artwork.webp" id="2_racf3"]
+[ext_resource type="FontFile" uid="uid://cltfsflsy53sv" path="res://assets/Cardo/Cardo-Bold.ttf" id="3_7m3ot"]
+[ext_resource type="PackedScene" uid="uid://dgwjtaiyl386a" path="res://scenes/MaskModule.tscn" id="4_racf3"]
+
+[sub_resource type="Animation" id="Animation_bqqt6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wu84c"]
+resource_name = "fade_show"
+length = 2.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ln24"]
+_data = {
+&"RESET": SubResource("Animation_bqqt6"),
+&"fade_show": SubResource("Animation_wu84c")
+}
+
+[node name="GameOver" type="Control" unique_id=1788983159]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tbwuq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=27436446]
+libraries/ = SubResource("AnimationLibrary_8ln24")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=785247416]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -84.0
+offset_right = 1284.0
+offset_bottom = 824.0
+texture = ExtResource("2_racf3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2026549149]
+layout_mode = 0
+offset_right = 1293.0
+offset_bottom = 739.0
+color = Color(0, 0, 0, 0.823)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=596812071]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 1278.0
+offset_bottom = 720.0
+scale = Vector2(1, 0.9896432)
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1463330003]
+layout_mode = 0
+offset_right = 1278.0
+offset_bottom = 716.0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1995651241]
+layout_mode = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 160
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 50
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer" unique_id=1378540638]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_7m3ot")
+theme_override_font_sizes/font_size = 60
+text = "Gracias por jugar"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=840632320]
+layout_mode = 2
+theme_override_constants/margin_left = 400
+theme_override_constants/margin_right = 400
+
+[node name="MaskModule" parent="." unique_id=1517707074 instance=ExtResource("4_racf3")]
+position = Vector2(647, 469)
+scale = Vector2(1.9200001, 1.9200001)

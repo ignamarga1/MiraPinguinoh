@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bjl6og0d1y6gi"]
+
+[ext_resource type="Texture2D" uid="uid://5jvyievw1hhu" path="res://assets/yellow_bg.png" id="1_t7chq"]
+[ext_resource type="PackedScene" uid="uid://caeqqqt5x20ab" path="res://scenes/LogicDoors.tscn" id="2_m55pc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m55pc"]
+
+[node name="LogicalDoors" type="Node2D" unique_id=274553309]
+
+[node name="YellowBg" type="Sprite2D" parent="." unique_id=1972976084]
+position = Vector2(632, 313.99994)
+scale = Vector2(0.75, 0.74999994)
+texture = ExtResource("1_t7chq")
+
+[node name="LogicDoors" parent="." unique_id=682151997 instance=ExtResource("2_m55pc")]
+position = Vector2(673, 315)
+scale = Vector2(0.5, 0.5)
+
+[node name="Walls" type="Node2D" parent="." unique_id=643850668]
+position = Vector2(678, 319)
+scale = Vector2(0.55, 0.55)
+
+[node name="Wall 1" type="StaticBody2D" parent="Walls" unique_id=752676248]
+position = Vector2(-505, 0)
+scale = Vector2(0.5, 50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 1" unique_id=153669099]
+shape = SubResource("RectangleShape2D_m55pc")
+
+[node name="Wall 2" type="StaticBody2D" parent="Walls" unique_id=1683229070]
+position = Vector2(505, 0)
+scale = Vector2(0.5, 50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 2" unique_id=1327547708]
+shape = SubResource("RectangleShape2D_m55pc")
+
+[node name="Wall 3" type="StaticBody2D" parent="Walls" unique_id=1819172064]
+position = Vector2(0, -505)
+rotation = 1.5707964
+scale = Vector2(0.5, 50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 3" unique_id=898283693]
+shape = SubResource("RectangleShape2D_m55pc")
+
+[node name="Wall 4" type="StaticBody2D" parent="Walls" unique_id=1972115303]
+position = Vector2(0, 505)
+rotation = 1.5707964
+scale = Vector2(0.5, 50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall 4" unique_id=1590379603]
+shape = SubResource("RectangleShape2D_m55pc")

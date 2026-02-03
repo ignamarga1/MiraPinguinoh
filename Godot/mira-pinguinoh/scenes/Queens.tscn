@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://uy2cj7dqjql4"]
+
+[ext_resource type="PackedScene" uid="uid://2x2qewl56ta1" path="res://scenes/interactable_object.tscn" id="1_b71py"]
+[ext_resource type="PackedScene" uid="uid://dc5gbt1e8usyy" path="res://scenes/player.tscn" id="2_eoitg"]
+[ext_resource type="Script" uid="uid://brtibcewte6q" path="res://scripts/queens_manager.gd" id="3_eoitg"]
+
+[node name="Queens" type="Node2D" unique_id=682151997]
+
+[node name="Interactables" type="Node2D" parent="." unique_id=1137079167]
+
+[node name="Row 1" type="Node2D" parent="Interactables" unique_id=1975759904]
+position = Vector2(0, 400)
+
+[node name="Interactable1" parent="Interactables/Row 1" unique_id=1353283679 instance=ExtResource("1_b71py")]
+position = Vector2(-400, 0)
+
+[node name="Interactable2" parent="Interactables/Row 1" unique_id=1833380359 instance=ExtResource("1_b71py")]
+position = Vector2(-200, 0)
+j = 1
+
+[node name="Interactable3" parent="Interactables/Row 1" unique_id=1477618049 instance=ExtResource("1_b71py")]
+j = 2
+
+[node name="Interactable4" parent="Interactables/Row 1" unique_id=702804419 instance=ExtResource("1_b71py")]
+position = Vector2(200, 0)
+j = 3
+
+[node name="Interactable5" parent="Interactables/Row 1" unique_id=975825424 instance=ExtResource("1_b71py")]
+position = Vector2(400, 0)
+j = 4
+
+[node name="Row 2" type="Node2D" parent="Interactables" unique_id=1896598516]
+position = Vector2(0, 200)
+
+[node name="Interactable1" parent="Interactables/Row 2" unique_id=1141291164 instance=ExtResource("1_b71py")]
+position = Vector2(-400, 0)
+i = 1
+
+[node name="Interactable2" parent="Interactables/Row 2" unique_id=620852813 instance=ExtResource("1_b71py")]
+position = Vector2(-200, 0)
+i = 1
+j = 1
+
+[node name="Interactable3" parent="Interactables/Row 2" unique_id=107252947 instance=ExtResource("1_b71py")]
+i = 1
+j = 2
+
+[node name="Interactable4" parent="Interactables/Row 2" unique_id=425947533 instance=ExtResource("1_b71py")]
+position = Vector2(200, 0)
+i = 1
+j = 3
+
+[node name="Interactable5" parent="Interactables/Row 2" unique_id=1751534694 instance=ExtResource("1_b71py")]
+position = Vector2(400, 0)
+i = 1
+j = 4
+
+[node name="Row 3" type="Node2D" parent="Interactables" unique_id=1507986461]
+
+[node name="Interactable1" parent="Interactables/Row 3" unique_id=603200204 instance=ExtResource("1_b71py")]
+position = Vector2(-400, 0)
+i = 2
+
+[node name="Interactable2" parent="Interactables/Row 3" unique_id=1644454852 instance=ExtResource("1_b71py")]
+position = Vector2(-200, 0)
+i = 2
+j = 1
+
+[node name="Interactable3" parent="Interactables/Row 3" unique_id=702231946 instance=ExtResource("1_b71py")]
+i = 2
+j = 2
+
+[node name="Interactable4" parent="Interactables/Row 3" unique_id=1926212474 instance=ExtResource("1_b71py")]
+position = Vector2(200, 0)
+i = 2
+j = 3
+
+[node name="Interactable5" parent="Interactables/Row 3" unique_id=2034242123 instance=ExtResource("1_b71py")]
+position = Vector2(400, 0)
+i = 2
+j = 4
+
+[node name="Row 4" type="Node2D" parent="Interactables" unique_id=1820093580]
+position = Vector2(0, -200)
+
+[node name="Interactable1" parent="Interactables/Row 4" unique_id=1114370278 instance=ExtResource("1_b71py")]
+position = Vector2(-400, 0)
+i = 3
+
+[node name="Interactable2" parent="Interactables/Row 4" unique_id=1388507264 instance=ExtResource("1_b71py")]
+position = Vector2(-200, 0)
+i = 3
+j = 1
+
+[node name="Interactable3" parent="Interactables/Row 4" unique_id=398638827 instance=ExtResource("1_b71py")]
+i = 3
+j = 2
+
+[node name="Interactable4" parent="Interactables/Row 4" unique_id=575060130 instance=ExtResource("1_b71py")]
+position = Vector2(200, 0)
+i = 3
+j = 3
+
+[node name="Interactable5" parent="Interactables/Row 4" unique_id=924264322 instance=ExtResource("1_b71py")]
+position = Vector2(400, 0)
+i = 3
+j = 4
+
+[node name="Row 5" type="Node2D" parent="Interactables" unique_id=127634055]
+position = Vector2(0, -400)
+
+[node name="Interactable1" parent="Interactables/Row 5" unique_id=144752920 instance=ExtResource("1_b71py")]
+position = Vector2(-400, 0)
+i = 4
+
+[node name="Interactable2" parent="Interactables/Row 5" unique_id=1061370704 instance=ExtResource("1_b71py")]
+position = Vector2(-200, 0)
+i = 4
+j = 1
+
+[node name="Interactable3" parent="Interactables/Row 5" unique_id=238023676 instance=ExtResource("1_b71py")]
+i = 4
+j = 2
+
+[node name="Interactable4" parent="Interactables/Row 5" unique_id=98370859 instance=ExtResource("1_b71py")]
+position = Vector2(200, 0)
+i = 4
+j = 3
+
+[node name="Interactable5" parent="Interactables/Row 5" unique_id=1482978899 instance=ExtResource("1_b71py")]
+position = Vector2(400, 0)
+i = 4
+j = 4
+
+[node name="Player" parent="." unique_id=1894066236 instance=ExtResource("2_eoitg")]
+position = Vector2(0, 450)
+
+[node name="GameManager" type="Node2D" parent="." unique_id=2142246096]
+script = ExtResource("3_eoitg")
